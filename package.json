@@ -1,0 +1,25 @@
+{
+  "name": "irc-parser",
+  "version": "0.0.0",
+  "description": "Simple IRC parser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/braddunbar/irc-parser.git"
+  },
+  "keywords": [
+    "irc"
+  ],
+  "author": "dunbarb2@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braddunbar/irc-parser/issues"
+  },
+  "homepage": "https://github.com/braddunbar/irc-parser",
+  "devDependencies": {
+    "tape": "^2.12.1"
+  }
+}
