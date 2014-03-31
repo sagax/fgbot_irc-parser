@@ -8,6 +8,7 @@ test('simple command', function(t) {
 
 test('prefix', function(t) {
   var msg = parse(':irc.example.com PING');
+  t.is(msg.raw, ':irc.example.com PING');
   t.is(msg.prefix, 'irc.example.com');
   t.is(msg.command, 'PING');
   t.end();
@@ -15,6 +16,7 @@ test('prefix', function(t) {
 
 test('params', function(t) {
   var msg = parse(':hitchcock.freenode.net NOTICE * :*** Looking up host...');
+  t.is(msg.raw, ':hitchcock.freenode.net NOTICE * :*** Looking up host...');
   t.is(msg.prefix, 'hitchcock.freenode.net');
   t.is(msg.command, 'NOTICE');
   t.same(msg.params, ['*', '*** Looking up host...']);

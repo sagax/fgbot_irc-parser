@@ -1,6 +1,8 @@
 
 module.exports = function(text) {
 
+  var raw = text;
+
   // prefix
   if (text.charAt(0) === ':') {
     var i = text.indexOf(' ');
@@ -28,6 +30,7 @@ module.exports = function(text) {
   if (text) params.push(text.slice(1));
 
   return {
+    raw: raw,
     prefix: prefix,
     command: command,
     params: params
