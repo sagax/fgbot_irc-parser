@@ -21,5 +21,18 @@
   "homepage": "https://github.com/braddunbar/irc-parser",
   "devDependencies": {
     "tape": "^2.12.1"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": {
+      "ie/6..latest",
+      "chrome/latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6..latest",
+      "ipad/6..latest",
+      "android-browser/latest"
+    }
   }
 }
